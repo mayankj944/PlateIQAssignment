@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="436830" started-at="2019-07-15T08:54:46Z" finished-at="2019-07-15T09:02:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="436830" started-at="2019-07-15T08:54:46Z" finished-at="2019-07-15T09:02:03Z">
+      <class name="com.plateIQ.plateIQAssignment.roundTripBooking">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@15ff3e9e]" name="beforeClass" is-config="true" duration-ms="8190" started-at="2019-07-15T08:54:38Z" finished-at="2019-07-15T08:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@15ff3e9e]" name="testSetup" is-config="true" duration-ms="2730" started-at="2019-07-15T08:54:46Z" finished-at="2019-07-15T08:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="roundTripBooking()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@15ff3e9e]" name="roundTripBooking" duration-ms="434046" started-at="2019-07-15T08:54:49Z" finished-at="2019-07-15T09:02:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roundTripBooking -->
+      </class> <!-- com.plateIQ.plateIQAssignment.roundTripBooking -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
