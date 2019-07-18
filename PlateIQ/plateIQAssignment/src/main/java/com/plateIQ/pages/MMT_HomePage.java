@@ -72,17 +72,20 @@ public class MMT_HomePage {
 		{
 			WebElement fromBox = driver.findElement(By.xpath("//label[@for='fromCity']"));
 			fromBox.click();
-			WebElement inputbox = driver.findElement(By.xpath("//label[@for='fromCity']//input"));
+			WebElement inputbox = driver.findElement(By.xpath("//label[@for='fromCity']/..//input[@placeholder='From']"));
 			inputbox.click();
 			inputbox.clear();
 			inputbox.sendKeys("goa");
-			List<WebElement> myList = new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@id='react-autowhatever-1']//p")));
+			Thread.sleep(1000);
+			List<WebElement> myList = driver.findElements(By.xpath("//div[@id='react-autowhatever-1']//p[contains(text(),'Goa')]"));
 			for (WebElement element:myList)
 			{
-				if(element.getText().contains("Goa"));
+				if(element.getText().contains("Goa") && element.isDisplayed() && element.isEnabled());
 				{
 					element.click();
 					status = true;
+					Thread.sleep(1000);
+					break;
 				}
 
 			}
@@ -105,17 +108,22 @@ public class MMT_HomePage {
 		try
 		{
 			WebElement fromBox = driver.findElement(By.xpath("//label[@for='toCity']"));
+			Thread.sleep(1000);
 			fromBox.click();
-			WebElement inputbox = driver.findElement(By.xpath("//label[@for='toCity']//input"));
+			WebElement inputbox = driver.findElement(By.xpath("//label[@for='toCity']/..//input[@placeholder='To']"));
+			Thread.sleep(1000);
 			inputbox.clear();
 			inputbox.sendKeys("Mumbai");
-			List<WebElement> myList = new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@id='react-autowhatever-1']//p")));
+			Thread.sleep(1000);
+			List<WebElement> myList = driver.findElements(By.xpath("//div[@id='react-autowhatever-1']//p[contains(text(),'Mumbai')]"));
 			for (WebElement element:myList)
 			{
 				if(element.getText().contains("Mumbai"));
 				{
 					element.click();
 					status = true;
+					Thread.sleep(1000);
+					break;
 				}
 
 			}

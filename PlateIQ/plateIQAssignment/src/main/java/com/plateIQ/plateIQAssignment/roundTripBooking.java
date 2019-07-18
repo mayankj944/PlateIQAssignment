@@ -64,6 +64,7 @@ public class roundTripBooking extends BaseScript{
 		mmt_HomePage.selectRoundTripOption();
 		mmt_HomePage.selectFromCity();
 		mmt_HomePage.selectToCity();
+		//Thread.sleep(1000);
 		Calendar calendar = Calendar.getInstance();
 		DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 		Date date = new Date();

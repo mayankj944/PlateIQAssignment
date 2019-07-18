@@ -27,14 +27,15 @@ public class BaseScript {
 	 * method to initialize chrome browser
 	 */
 	public static WebDriver InitializeChromeDriver() {
-		DesiredCapabilities caps = new DesiredCapabilities().chrome();
-		caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		caps.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, false);
+		ChromeOptions options = new ChromeOptions(); 
+		options.addArguments("disable-infobars"); 
+		//WebDriver driver = new ChromeDriver(options);;
 
-		
-		System.setProperty("webdriver.chrome.driver","C:/PlateIQ/plateIQAssignment/BrowserDriver/chromedriver.exe");
-		WebDriver driver = new ChromeDriver(caps);
-
+		String basepath = System.getProperty("user.dir");
+		System.out.println(basepath);
+		System.setProperty("webdriver.chrome.driver",basepath +"/BrowserDriver/chromedriver.exe");
+		WebDriver driver = new ChromeDriver(options);
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		driver.manage().window().maximize();
 
