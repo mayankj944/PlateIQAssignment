@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="436830" started-at="2019-07-15T08:54:46Z" finished-at="2019-07-15T09:02:03Z">
+  <suite name="Suite" duration-ms="287570" started-at="2019-07-18T14:46:13Z" finished-at="2019-07-18T14:51:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="436830" started-at="2019-07-15T08:54:46Z" finished-at="2019-07-15T09:02:03Z">
+    <test name="Test" duration-ms="287570" started-at="2019-07-18T14:46:13Z" finished-at="2019-07-18T14:51:00Z">
       <class name="com.plateIQ.plateIQAssignment.roundTripBooking">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@15ff3e9e]" name="beforeClass" is-config="true" duration-ms="8190" started-at="2019-07-15T08:54:38Z" finished-at="2019-07-15T08:54:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@15ff3e9e]" name="testSetup" is-config="true" duration-ms="2730" started-at="2019-07-15T08:54:46Z" finished-at="2019-07-15T08:54:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="roundTripBooking()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@15ff3e9e]" name="roundTripBooking" duration-ms="434046" started-at="2019-07-15T08:54:49Z" finished-at="2019-07-15T09:02:03Z">
+        <test-method status="PASS" signature="roundTripBooking()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@e25b2fe]" name="roundTripBooking" duration-ms="28036" started-at="2019-07-18T14:50:32Z" finished-at="2019-07-18T14:51:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- roundTripBooking -->
       </class> <!-- com.plateIQ.plateIQAssignment.roundTripBooking -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.plateIQ.plateIQAssignment.LoginTestCase">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.plateIQ.plateIQAssignment.LoginTestCase@204f30ec]" name="beforeClass" is-config="true" duration-ms="7476" started-at="2019-07-18T14:45:48Z" finished-at="2019-07-18T14:45:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@e25b2fe]" name="beforeClass" is-config="true" duration-ms="17144" started-at="2019-07-18T14:45:56Z" finished-at="2019-07-18T14:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:com.plateIQ.plateIQAssignment.LoginTestCase@204f30ec]" name="testSetup" is-config="true" duration-ms="27912" started-at="2019-07-18T14:46:13Z" finished-at="2019-07-18T14:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@e25b2fe]" name="testSetup" is-config="true" duration-ms="7982" started-at="2019-07-18T14:46:41Z" finished-at="2019-07-18T14:46:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="WorngEmail()[pri:0, instance:com.plateIQ.plateIQAssignment.LoginTestCase@204f30ec]" name="WorngEmail" duration-ms="42141" started-at="2019-07-18T14:46:49Z" finished-at="2019-07-18T14:47:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WorngEmail -->
+        <test-method status="PASS" signature="correctMobileNo()[pri:0, instance:com.plateIQ.plateIQAssignment.LoginTestCase@204f30ec]" name="correctMobileNo" duration-ms="30125" started-at="2019-07-18T14:47:31Z" depends-on-methods="com.plateIQ.plateIQAssignment.LoginTestCase.WorngEmail" finished-at="2019-07-18T14:48:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- correctMobileNo -->
+        <test-method status="PASS" signature="BlankPassword()[pri:0, instance:com.plateIQ.plateIQAssignment.LoginTestCase@204f30ec]" name="BlankPassword" duration-ms="50336" started-at="2019-07-18T14:48:02Z" depends-on-methods="com.plateIQ.plateIQAssignment.LoginTestCase.correctMobileNo" finished-at="2019-07-18T14:48:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BlankPassword -->
+        <test-method status="PASS" signature="WrongPassword()[pri:0, instance:com.plateIQ.plateIQAssignment.LoginTestCase@204f30ec]" name="WrongPassword" duration-ms="50274" started-at="2019-07-18T14:48:52Z" depends-on-methods="com.plateIQ.plateIQAssignment.LoginTestCase.BlankPassword" finished-at="2019-07-18T14:49:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WrongPassword -->
+        <test-method status="PASS" signature="LoginTestCase()[pri:0, instance:com.plateIQ.plateIQAssignment.LoginTestCase@204f30ec]" name="LoginTestCase" duration-ms="50276" started-at="2019-07-18T14:49:42Z" depends-on-methods="com.plateIQ.plateIQAssignment.LoginTestCase.WrongPassword" finished-at="2019-07-18T14:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestCase -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.plateIQ.plateIQAssignment.LoginTestCase@204f30ec]" name="afterClass" is-config="true" duration-ms="4370" started-at="2019-07-18T14:51:01Z" finished-at="2019-07-18T14:51:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.plateIQ.plateIQAssignment.roundTripBooking@e25b2fe]" name="afterClass" is-config="true" duration-ms="1413" started-at="2019-07-18T14:51:05Z" finished-at="2019-07-18T14:51:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.plateIQ.plateIQAssignment.LoginTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

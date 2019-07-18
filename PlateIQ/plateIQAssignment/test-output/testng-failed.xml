@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.plateIQ.plateIQAssignment.roundTripBooking">
+      <class name="com.plateIQ.plateIQAssignment.LoginTestCase">
         <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="WrongPassword"/>
           <include name="WorngEmail"/>
+          <include name="WrongPassword"/>
+          <include name="beforeClass"/>
+          <include name="LoginTestCase"/>
+          <include name="correctMobileNo"/>
+          <include name="afterClass"/>
           <include name="testSetup"/>
           <include name="BlankPassword"/>
-          <include name="correctMobileNo"/>
-          <include name="LoginTestCase"/>
         </methods>
-      </class> <!-- com.plateIQ.plateIQAssignment.roundTripBooking -->
+      </class> <!-- com.plateIQ.plateIQAssignment.LoginTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
